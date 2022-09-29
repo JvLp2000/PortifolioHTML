@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="Pt-Br">
+<meta charset="UTF-8">
+<meta name="author" content="Portifolio">
+
+<head>
+    <style>
+        body {
+            background-image: url("imagem_fundo.jpg");
+            background-repeat: no-repeat;
+            background-size: 2000px;
+        }
+        .myDiv{
+            border: 3px outset black;
+            width: 450px;
+            height: 400px;
+        }
+        .input{
+            position: absolute;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1> Formulário </h1>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Página Inicial </a>
+        <a href="MinhaTrajetoria.html"> Minha Trajetória </a>
+        <a href="RedesSociais.html"> Redes Sociais </a>
+        <a href="Projetos.html"> Projetos </a>
+    </div>
+
+    <h2> Informações de Contato </h2>
+    <div class="myDiv">
+        <form method="get">
+            <label for="fname"> Nome Completo: </label><br>
+            <input type="text" id="fnome" name="fnome" value=""> <br> <br>
+            <label for="fidade"> Idade: </label><br>
+            <input type="number" id="fidade" name="fidade" value=""> <br> <br>
+            <label for="Email"> Email: </label> <br>
+            <input type="email" id="email" name="email" value=""> <br><br>
+            <label for="Estado Civil"> Estado Civil </label> <br> <br>
+            <input type="checkbox" id="Casado(a)" name="Casado(a)" value="Casado(a)">
+            <label for="fcasado(a)"> Casado(a) </label>
+            <input type="checkbox" id="Solteiro(a)" name="Solteiro(a)" value="Solteiro(a)">
+            <label for="fsolteiro(a)"> Solteiro(a) </label>
+            <input type="checkbox" id="Outro" name="Outro" value="Outro">
+            <label for="foutro"> Outro </label> <br> <br>
+
+
+
+            <fieldset>
+                <legend> Defina o sexo </legend>
+                <input type="radio" id="Masculino" name="fav_sexo" value="Masculino">
+                <label for="Masculino"> Masculino </label><br>
+                <input type="radio" id="Feminino" name="fav_sexo" value="Feminino">
+                <label for="Feminino"> Feminino </label><br>
+                <input type="radio" id="Outros" name="fav_sexo" value="Outros">
+                <label for="Outros"> Outros </label><br><br>
+            </fieldset>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Cancelar"><br>
+        </form>
+
+    </div>
+</body>
+
+
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="Granbery, Si">
+        <meta name="description" content="Meu primeiro teste de web site">
+        <meta name="author" content="João Victor">
+        <meta name="http-equiv="refresh content="5">
+
+            <title> Universo League of Legends</title>
+    <style>
+        body {
+            background-image: url(imagens_primeiro_projeto/fundolol.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 300%;
+        }
+
+        .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(0, 122, 116);
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        }
+
+        .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #ffffff;
+        display: block;
+        transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+        color: #c49600;
+        }
+
+        .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+        
+        }
+
+        #main {
+        transition: margin-left .5s;
+        padding: 16px;
+        color:rgb(122, 83, 0)
+        }
+
+        @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+        }
+            
+    </style>        
+                
+            
+    </head>
+    <body> 
+        <h1 style="font-size:50px;"> <font color="#daa520"> <i> Universo League of Legends </i> </font> </h1>
+        <p style="font-size:30px;"> <font color="#008080"> Menu </font> </p>
+          <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="Atualização.html">Atualização </a>
+            <a href="Runas.html">Runas</a>
+            <a href="Itens.html">Itens</a>
+           
+          </div>
+          
+          <div id="main">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+          </div>
+        
+        
+          <h2> <font color="white"> Esse é meu primeiro web site.</font> </h2>
+        <font color="white"> Estudo sistema de informação no Granbery </font>
+        
+    
+    
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+            }
+
+            function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+            }
+        </script>    
+
+    </body>
+
+
+</html>
