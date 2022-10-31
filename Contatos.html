@@ -5,18 +5,13 @@
 
 <head>
     <title> Contatos </title>
+    <link rel="stylesheet" href="CSS/css.css">
     <style>
-        body {
-            background-image: url(imagens_portfolio/imagem_fundo.jpg);
-            background-repeat: no-repeat;
-            background-size: 2000px;
-        }
-        .myDiv{
-            border: 2px outset black;
+        .myDiv {
+            border: 2px outset rgb(4, 194, 252);
             width: 350px;
             height: 315px;
         }
-       
     </style>
 
 </head>
@@ -24,14 +19,30 @@
 <body>
     <h1> <b> Contatos </b> </h1>
     <hr>
-    <ul>
-        <li> <a href="index.html">Página Principal </a> </li>
-        <li> <a href="SobreMim.html"> Sobre Mim </a> </li>
-        <li> <a href="Formação.html"> Formação </a> </li>
-        <li> <a href="AtuaçãoProfissional.html"> Atuação Profissional </a> </li>
-        <li> <a href="Contatos.html"> Contato </a> </li>
-        <li> <a href="Portfolio.html"> Portifolio </a></li>
-    </ul>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Página Inicial</a>
+        <a href="SobreMim.html">Sobre Mim</a>
+        <a href="Formação.html">Formação </a>
+        <a href="AtuaçãoProfissional.html">Atuação Profissional</a>
+        <a href="Contatos.html"> Contatos </a>
+        <a href="Portfolio.html"> Portfolio </a>
+    </div>
+    <div id="main">
+        <span style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776; Menu </span>
+    </div>
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
     <br><br><br>
     <ol>
         <dl>
@@ -43,27 +54,34 @@
             <dd> - <a href="https://www.facebook.com/joaovictor.lima.359/" target="_blank"> Link </a> </dd>
             <dt> Instagram: </dt>
             <dd> - <a href="https://www.instagram.com/joaovictor4334/" target="_blank"> Link </a></dd>
-        </dl>
+            <dt> Git hub: </dt>
+            <dd> - <a href="https://github.com/JvLp2000"> </a> 
+            </dl>
     </ol> <br><br>
     <div class="myDiv">
-    <form method="get">
-        <label for="fname"> Nome: </label><br>
-        <input type="text" id="fnome" name="fnome" value=""> <br> <br>
-        <label for="Email"> Email: </label> <br>
-        <input type="email" id="email" name="email" value=""> <br><br>
-        <label type="text" id="mensagem" name="mensagem"> Mensagem: </label>
-        <textarea for="mensage" id="mensagem " rows="10" cols="40"  ></textarea>
-        <input type="submit" value="Enviar">
-        <input type="reset" value="Cancelar"><br>
-    </form> 
+        <form method="get">
+            <label for="fname"> Nome: </label><br>
+            <input type="text" id="fnome" name="fnome" value=""> <br> <br>
+            <label for="Email"> Email: </label> <br>
+            <input type="email" id="email" name="email" value=""> <br><br>
+            <label type="text" id="mensagem" name="mensagem"> Mensagem: </label>
+            <textarea for="mensage" id="mensagem " rows="10" cols="40"></textarea>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Cancelar"><br>
+        </form>
     </div>
 
-        <footer>
-            <p> <a href="https://www.facebook.com/joaovictor.lima.359/" target="_blank"> Facebook </a> </p>
-            <p> <a href="https://www.instagram.com/joaovictor4334/" target="_blank"> Instagram </a></p>
-            <p> Email: Victor-jf1@hotmail.com </p>
-            <p> Contato: (32) 991743919 </p>
-        </footer>
+    <footer id="rodape">
+        <p> <a href="https://www.facebook.com/joaovictor.lima.359/" target="_blank"> <img width="70px" height="70px"
+                    src="imagem_rodape_facebook.png">
+                <a href="https://www.instagram.com/joaovictor4334/" target="_blank"> <img width="70px" height="70px"
+                        src="imagem_rodape_instagram.png">
+                    <a href="https://github.com/JvLp2000" target="_blank"> <img width="70px" height="70px"
+                            src="imagem_rodape_github.png"> </a> </p>
+
+        <p> Email: Victor-jf1@hotmail.com </p>
+        <p> Contato: (32) 991743919 </p>
+    </footer>
 </body>
 
 

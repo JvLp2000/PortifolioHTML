@@ -5,27 +5,37 @@
 
 <head>
     <title> Portifólio </title>
-    <style>
-        body {
-            background-image: url(imagens_portfolio/imagem_fundo.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-    </style>
+    <link rel="stylesheet" href="CSS/css.css">
 
 </head>
 
 <body>
     <h1> <b> Portifolio </b> </h1>
     <hr>
-    <ul>
-        <li> <a href="index.html">Página Principal </a> </li>
-        <li> <a href="SobreMim.html"> Sobre Mim </a> </li>
-        <li> <a href="Formação.html"> Formação </a> </li>
-        <li> <a href="AtuaçãoProfissional.html"> Atuação Profissional </a> </li>
-        <li> <a href="Contatos.html"> Contato </a> </li>
-        <li> <a href="Portfolio.html"> Portifolio </a></li>
-    </ul>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Página Inicial</a>
+        <a href="SobreMim.html">Sobre Mim</a>
+        <a href="Formação.html">Formação </a>
+        <a href="AtuaçãoProfissional.html">Atuação Profissional</a>
+        <a href="Contatos.html"> Contatos </a>
+        <a href="Portfolio.html"> Portfolio </a>
+    </div>
+    <div id="main">
+        <span style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776; Menu </span>
+    </div>
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
     <hr>
     <ol>
         <li> <a href="#P1"> Ir para o primeiro projeto </a> </li>
@@ -76,9 +86,11 @@
         <dd> <a href="https://www.minecraft.net/pt-pt/about-minecraft"> Minecraft </a></dd>
         <dd> Linguagem Utilizada nesse projeto é a linguagem Java <a href="DescricaoTecnologica_java.html"> Link</a></dd>
     </ol>
-    <footer>
-        <p> <a href="https://www.facebook.com/joaovictor.lima.359/" target="_blank"> Facebook </a> </p>
-        <p> <a href="https://www.instagram.com/joaovictor4334/" target="_blank"> Instagram </a></p>
+    <footer id="rodape">
+        <p> <a href="https://www.facebook.com/joaovictor.lima.359/" target="_blank"> <img width="70px" height="70px" src="imagem_rodape_facebook.png"> 
+            <a href="https://www.instagram.com/joaovictor4334/" target="_blank"> <img width="70px" height="70px" src="imagem_rodape_instagram.png">
+            <a href="https://github.com/JvLp2000" target="_blank"> <img width="70px" height="70px" src="imagem_rodape_github.png"> </a> </p>
+        
         <p> Email: Victor-jf1@hotmail.com </p>
         <p> Contato: (32) 991743919 </p>
     </footer>

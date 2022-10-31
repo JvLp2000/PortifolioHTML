@@ -6,14 +6,8 @@
 
 <head>
     <title> Página Inicial </title>
+    <link rel="stylesheet" href="CSS/css.css">
     <style>
-        body {
-            background-image: url(imagens_portfolio/imagem_fundo.jpg);
-            background-repeat: no-repeat;
-            background-size: 2000px;
-        }
-
-
         h1 {
             text-align: center;
         }
@@ -30,30 +24,52 @@
 </head>
 
 <body>
-    <h1 style="font-size: 50px;">
-        <font color="#2e2e2e"> <b> <u> Portfolio - Página Inicial </b> </u>  </font>
-        <hr>
+    <h1 style="font-size: 50px; margin-left: 200px; padding-right: 200px;">
+
+        <font color="#2e2e2e"> <b> <u> Página Inicial </b> </u> </font>
     </h1>
-    <ul>
-        <li> <a href="index.html">  Página Principal  </a> </li>
-        <li> <a href="SobreMim.html">  Sobre Mim </a>  </li>
-        <li> <a href="Formação.html"> Formação </a> </li>
-        <li> <a href="AtuaçãoProfissional.html"> Atuação Profissional </a> </li>
-        <li> <a href="Contatos.html"> Contato </a> </li>
-        <li> <a href="Portfolio.html"> Portifolio </a></li>
-    </ul>
-   
-    <br> <br> 
-    <h2> <strong> <i> Sejam bem-vindos, meu nome é João Victor, e esse é o meu Portifolio! </i> </strong> </h2> 
-    <h3> <img src="imagens_portfolio/Imagem_ilustrativa.jpg"> </h3>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Página Inicial</a>
+        <a href="SobreMim.html">Sobre Mim</a>
+        <a href="Formação.html">Formação </a>
+        <a href="AtuaçãoProfissional.html">Atuação Profissional</a>
+        <a href="Contatos.html"> Contatos </a>
+        <a href="Portfolio.html"> Portfolio </a>
+    </div>
+    <div id="main">
+        <span style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776; Menu </span>
+    </div>
+    <script>
 
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
 
-    <footer>
-        <p> <a href="https://www.facebook.com/joaovictor.lima.359/" target="_blank"> Facebook </a> </p>
-        <p> <a href="https://www.instagram.com/joaovictor4334/" target="_blank"> Instagram </a></p>
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
+
+    <section>
+        <br> <br>
+        <div style="margin-left: 300px; margin-right: 300px; padding-left: 300px; padding-right: 300px;">
+            <h2> <strong> <i> Sejam bem-vindos, meu nome é João Victor, e esse é o meu Portifolio! </i> </strong> </h2>
+        </div>
+        <h3> <img src="imagens_portfolio/Imagem_ilustrativa.jpg"> </h3>
+    </section>
+
+    <footer id="rodape">
+        <p> <a href="https://www.facebook.com/joaovictor.lima.359/" target="_blank"> <img width="70px" height="70px" src="imagem_rodape_facebook.png"> 
+            <a href="https://www.instagram.com/joaovictor4334/" target="_blank"> <img width="70px" height="70px" src="imagem_rodape_instagram.png">
+            <a href="https://github.com/JvLp2000" target="_blank"> <img width="70px" height="70px" src="imagem_rodape_github.png"> </a> </p>
+        
         <p> Email: Victor-jf1@hotmail.com </p>
         <p> Contato: (32) 991743919 </p>
     </footer>
+        
 
 </body>
 

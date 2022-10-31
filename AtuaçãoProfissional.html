@@ -6,11 +6,36 @@
 
 <head>
     <title> Atuação Profissional </title>
+    <link rel="stylesheet" href="CSS/css.css">
     <style>
-        body {
-            background-image: url(imagens_portfolio/imagem_fundo.jpg);
-            background-repeat: no-repeat;
-            background-size: 2000px;
+        #customers {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        #customers td,
+        #customers th {
+            border: 1px solid rgb(0, 0, 0);
+            padding: 8px;
+        }
+
+        
+
+        #customers tr:hover {
+            background-color: rgb(4, 194, 252);
+        }
+
+        #customers th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: rgb(4, 194, 252);
+            color: rgb(0, 0, 0);
+        }
+
+        h2{
+            text-align: center;
         }
     </style>
 </head>
@@ -18,31 +43,40 @@
 <body>
     <h1> <b> Atuação Profissional </b></h1>
     <hr>
-    <ul>
-        <li> <a href="index.html">Página Principal </a> </li>
-        <li> <a href="SobreMim.html"> Sobre Mim </a> </li>
-        <li> <a href="Formação.html"> Formação </a> </li>
-        <li> <a href="AtuaçãoProfissional.html"> Atuação Profissional </a> </li>
-        <li> <a href="Contatos.html"> Contato </a> </li>
-        <li> <a href="Portfolio.html"> Portifolio </a></li>
-    </ul>
-    <dl>
-        <dt> Google - Gerente de Desenvolvimento </li>
-        <dd> Tempo de experiência: 2012 - 2015</dd>
-        <dd> Principais Atividades: Acompanhava a criação dos softwares; Solucionava as entraves;
-            Efetiva a implantação de sistemas de softwares.
-        </dd> <br><br>
-        <dt> Youtube - Analista de Softwares </dt>
-        <dd> Tempo de experiência: 2016 - 2018</dd>
-        <dd> Principais Atividades: Resolução de softwares </dd><br><br>
-        <dt> SpaceX </dt>
-        <dd> Tempo de experiência: 2019 - 2021 </dd>
-        <dd> Principais Atividades: Programador de softwares que foram usados no projeto da Starship SN15.</dd> 
-    </dl>
-   
-    <footer>
-        <p> <a href="https://www.facebook.com/joaovictor.lima.359/" target="_blank"> Facebook </a> </p>
-        <p> <a href="https://www.instagram.com/joaovictor4334/" target="_blank"> Instagram </a></p>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Página Inicial</a>
+        <a href="SobreMim.html">Sobre Mim</a>
+        <a href="Formação.html">Formação </a>
+        <a href="AtuaçãoProfissional.html">Atuação Profissional</a>
+        <a href="Contatos.html"> Contatos </a>
+        <a href="Portfolio.html"> Portfolio </a>
+    </div>
+    <div id="main">
+        <span style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776; Menu </span>
+    </div>
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
+    <h2> <img src="Atuacao_profissional.jpg" > </h2>
+
+    <footer id="rodape">
+        <p> <a href="https://www.facebook.com/joaovictor.lima.359/" target="_blank"> <img width="70px" height="70px"
+                    src="imagem_rodape_facebook.png">
+                <a href="https://www.instagram.com/joaovictor4334/" target="_blank"> <img width="70px" height="70px"
+                        src="imagem_rodape_instagram.png">
+                    <a href="https://github.com/JvLp2000" target="_blank"> <img width="70px" height="70px"
+                            src="imagem_rodape_github.png"> </a> </p>
+
         <p> Email: Victor-jf1@hotmail.com </p>
         <p> Contato: (32) 991743919 </p>
     </footer>

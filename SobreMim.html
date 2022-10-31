@@ -6,15 +6,7 @@
 
 <head>
     <title> Sobre Mim </title>
-    <style>
-        body {
-            background-image: url(imagens_portfolio/imagem_fundo.jpg);
-            background-repeat: no-repeat;
-            background-size: 2000px;
-        }
-
-        
-    </style>
+    <link rel="stylesheet" href="Css/css.css">
 
 </head>
 
@@ -23,30 +15,85 @@
     <h1> <b> Sobre mim <b> </h1>
     <hr>
 
-    <ul>
-        <li> <a href="index.html"> Página Principal </a> </li>
-        <li> <a href="SobreMim.html"> Sobre Mim </a> </li>
-        <li> <a href="Formação.html"> Formação </a> </li>
-        <li> <a href="AtuaçãoProfissional.html"> Atuação Profissional </a> </li>
-        <li> <a href="Contatos.html"> Contato </a> </li>
-        <li> <a href="Portfolio.html"> Portifolio </a></li>
-    </ul>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Página Inicial</a>
+        <a href="SobreMim.html">Sobre Mim</a>
+        <a href="Formação.html">Formação </a>
+        <a href="AtuaçãoProfissional.html">Atuação Profissional</a>
+        <a href="Contatos.html"> Contatos </a>
+        <a href="Portfolio.html"> Portfolio </a>
+    </div>
+    <div id="main">
+        <span style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776; Menu </span>
+    </div>
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
 
     <pre>
-    <p>     Olá, muito prazer em ter você lendo minha trajetória. Muito prazer,meu nome é João Victor, nasci em 24/11/2000, em Juiz de Fora MG e sou estudate de Sistemas de 
-informação, atualmente estou no 2º Período, nao Instituto Metodista Granbery.<br>
-Meu primeiro contato com a informática, foi quando eu ainda era pequeno, por causa da aula que tive quando ainda estava ensino primário, e desde então meu gosto pela área 
-da computação só foi aumentando, até descobrir a programação,acabei achando muito interessante e fiquei impressionado e gostaria de ir mais a fundo. Foi então no ensino médio 
-que cansado de estudar as mesmas matérias básicas de sempre, procurei um hobby para pode distrair a mente que estava cansada da rotina de escola, e começei a tentar fazer 
-o meu proprio jogo, que na época era em formato 2d, em uma plataforma chamada "godot".
+    <p style="font-size: 18px;">    Meu nome é João Victor de Lima Pereira, tenho 21 anos e nasci em Juiz de Fora(MG). Atualmente eu vivo junto dos meus pais, porém buscando minha independência.
+    Para realizar isso, estou fazendo faculdade de Sistemas de Informação, área que eu sou apaixonado e tenho muito empenho e vontade de aprender cada vez mais. Essa paixão pela área se deu 
+desde que eu era mais novo, mais especificamente no ensino fundamental escolar, quando tinha aulas de informática e meu interesse só foi aumentando fazendo que eu começasse a pesquisar 
+sobre o âmbito da informática, e acabei descobrindo sobre a parte de programação.
+    Nessa descoberta, tive uma empolgação muito grande, onde começei a fazer meu próprio jogo no formato 2D, em uma plataforma gratuita, chamada Godot. Foi muito mais difícil do que eu
+imaginava, errava muito, tive várias decepções, e foi quando decidi começar a faculdade de programação, para poder começar a aprender e desempenhar melhor nos meus objetivos.
+    Meu sonho atual, é conseguir seguir carreira na área de programação, sei que não é um ramo muito fácil, exige bastante dedicação e responsabilidade. Para conseguir alcançar meu objetivos
+pretendo ir praticando com projetos de autoria própria.
     </p>
     </pre>
+    <div style="font-size: 20px;">
+    <p>  Coisas que eu mais gosto
+        <ol>
+            <li> Viagens: </li>
+            <dd> Adoro viajar e conhecer lugares novos e culturas novas,por mais que seja lugares pertos, sinto que isso renova as energias e me deixa mais calmo e pronto pra enfretar os desafios do dia a dia.</dd>
+            <li> Comer: </li>
+            <dd> Comer é um prazer que eu tenho inigualável, gosto mais de comidas salgadas do que comidas doces, porém como de tudo. Sempre que viajo tento comer algo da região 
+                por curiosidade. Os pratos que eu mais gosto são:
+                <ol type="I">
+                    <li> Arroz, feijão, bife e batata frita.</li>
+                    <li> Lasanha com bife a parmegiana.</li>
+                    <li> Arroz Piamontese.</li>
+                    <li> Sanduíche de Peito de Frango.</li>
+                </ol>
+            </dd>
+            <li> Esportes: </li>
+            <dd> Sempre gostei de praticar esportes desde pequeno, é uma coisa que me deixa satisfeito, por isso sempre que possível eu prático quase todos os esportes. Os que eu mais gosto são:
+                <ol type="I">
+                    <li> Musculação</li>
+                    <li> Basquete</li>
+                    <li> Futebol</li>
+                    <li> Handball</li>
+                    <li> Vôlei</li>
+                </ol>
+            </dd>
+            <li> Jogar: </li>
+            <dd> Jogar sempre fez parte da minha vida desde pequeno, e até hoje tenho esse costume nos momentos vagos.</dd>
 
-    <footer>
-        <a href="https://www.facebook.com/joaovictor.lima.359/" target="_blank"> Facebook </a> </p>
-        <a href="https://www.instagram.com/joaovictor4334/" target="_blank"> Instagram </a></p>
-        Email: Victor-jf1@hotmail.com </p>
-        Contato: (32) 991743919 </p>
+        </ol>
+    </p>
+    </div>
+    
+
+    <footer id="rodape">
+        <p> <a href="https://www.facebook.com/joaovictor.lima.359/" target="_blank"> <img width="70px" height="70px"
+                    src="imagem_rodape_facebook.png">
+                <a href="https://www.instagram.com/joaovictor4334/" target="_blank"> <img width="70px" height="70px"
+                        src="imagem_rodape_instagram.png">
+                    <a href="https://github.com/JvLp2000" target="_blank"> <img width="70px" height="70px"
+                            src="imagem_rodape_github.png"> </a> </p>
+
+        <p> Email: Victor-jf1@hotmail.com </p>
+        <p> Contato: (32) 991743919 </p>
     </footer>
 
 
