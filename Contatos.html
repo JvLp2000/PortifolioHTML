@@ -10,7 +10,7 @@
         .myDiv {
             border: 2px outset rgb(4, 194, 252);
             width: 350px;
-            height: 315px;
+            height: 450px;
         }
     </style>
 
@@ -44,41 +44,67 @@
         }
     </script>
     <br><br><br>
-    <ol>
-        <dl>
-            <dt> Email: </dt>
-            <dd> - Victor-jf1@hotmail.com </dd>
-            <dt> Telefone: </dt>
-            <dd> - (32) 991743919 </dd>
-            <dt> Facebook: </dt>
-            <dd> - <a href="https://www.facebook.com/joaovictor.lima.359/" target="_blank"> Link </a> </dd>
-            <dt> Instagram: </dt>
-            <dd> - <a href="https://www.instagram.com/joaovictor4334/" target="_blank"> Link </a></dd>
-            <dt> Git hub: </dt>
-            <dd> - <a href="https://github.com/JvLp2000"> </a> 
-            </dl>
-    </ol> <br><br>
+    <table>
+        <tr>
+          <th>Email</th>
+          <th>Telefone</th>
+          <th>Facebook </th>
+          <th>instagram</th>
+        </tr>
+        <tr>
+          <td>Victor-jf1@hotmail.com</td>
+          <td>+55 (32) 9 91743919</td>
+          <td> <a href="https://www.facebook.com/joaovictor.lima.359/" target="_blank"> Facebook </a> </td>
+          <td> <a href="https://www.instagram.com/joaovictor4334/" target="_blank"> Instagram </a></td>
+
+
+        </tr>
+        <tr>
+          <td>joao.pereira16@a.granbery.metodista.br</td>
+          <td>+55 (32) 9 91743919</td>
+          <td> <a href="https://www.facebook.com/joaovictor.lima.359/" target="_blank"> Facebook </a> </td>
+          <td> <a href="https://www.instagram.com/joaovictor4334/" target="_blank"> Instagram </a></td>
+        </tr>
+        <tr>
+            <td>Victor-jf1@hotmail.com</td>
+            <td>+55 (32) 9 91743919</td>
+            <td> <a href="https://www.facebook.com/joaovictor.lima.359/" target="_blank"> Facebook </a> </td>
+            <td> <a href="https://www.instagram.com/joaovictor4334/" target="_blank"> Instagram </a></td>
+        </tr>
+        <tr>
+            <td>joao.pereira16@a.granbery.metodista.br</td>
+            <td>+55 (32) 9 91743919</td>
+            <td> <a href="https://www.facebook.com/joaovictor.lima.359/" target="_blank"> Facebook </a> </td>
+            <td> <a href="https://www.instagram.com/joaovictor4334/" target="_blank"> Instagram </a></td>
+        </tr>
+      
+       </table>
+    <br><br>
     <div class="myDiv">
+        <h3> Entre em contato </h3>
         <form method="get">
-            <label for="fname"> Nome: </label><br>
-            <input type="text" id="fnome" name="fnome" value=""> <br> <br>
-            <label for="Email"> Email: </label> <br>
-            <input type="email" id="email" name="email" value=""> <br><br>
+            <label for="fname">Nome:</label><br>
+            <input type="text" id="fnome" name="fnome" placeholder="Digite seu Nome" required="required" value=""> <br> <br>
+
+            <label for="fone">Telefone:</label><br>
+            <input type="tel" id="fone" placeholder="(xx)x-xxxx-xxxx" name="fone"><br><br>
+
+            <label for="email">Email:</label> <br>
+            <input type="email" id="email" placeholder="Digite seu Email" name="email" value=""> <br><br>
+
             <label type="text" id="mensagem" name="mensagem"> Mensagem: </label>
-            <textarea for="mensage" id="mensagem " rows="10" cols="40"></textarea>
+            <textarea for="mensage" id="mensagem" placeholder="Envie uma Mensagem" rows="10" cols="40"></textarea>
+
             <input type="submit" value="Enviar">
             <input type="reset" value="Cancelar"><br>
         </form>
     </div>
 
     <footer id="rodape">
-        <p> <a href="https://www.facebook.com/joaovictor.lima.359/" target="_blank"> <img width="70px" height="70px"
-                    src="imagem_rodape_facebook.png">
-                <a href="https://www.instagram.com/joaovictor4334/" target="_blank"> <img width="70px" height="70px"
-                        src="imagem_rodape_instagram.png">
-                    <a href="https://github.com/JvLp2000" target="_blank"> <img width="70px" height="70px"
-                            src="imagem_rodape_github.png"> </a> </p>
-
+        <p> <a href="https://www.facebook.com/joaovictor.lima.359/" target="_blank"> <img width="70px" height="70px" src="imagens_portfolio/imagem_facebook.png"> 
+            <a href="https://www.instagram.com/joaovictor4334/" target="_blank"> <img width="70px" height="70px" src="imagens_portfolio/imagem_instagram.png">
+            <a href="https://github.com/JvLp2000" target="_blank"> <img width="70px" height="70px" src="imagens_portfolio/imagem_github.png"> </a> </p>
+        
         <p> Email: Victor-jf1@hotmail.com </p>
         <p> Contato: (32) 991743919 </p>
     </footer>
